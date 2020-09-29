@@ -14,7 +14,7 @@ public class trapecio_con_intervalos {
     public static void main(String[] args) {
         ///////////////////MODIFICAR ESTO///////////////////
         double[] x = {0, 1, 2, 3, 4};
-        double[] intervalos = {1, 4.75, 3, 0, 0};
+        double[] f_x = {1, 4.75, 3, 0, 0};
         ///////////////////MODIFICAR ESTO///////////////////
         
         double a = x[0];
@@ -23,11 +23,11 @@ public class trapecio_con_intervalos {
         double suma = 0;
 
         System.out.println("h: " + h);
-        for (int i = 1; i < intervalos.length; i++) {
-            suma = suma + intervalos[i];
+        for (int i = 1; i < f_x.length; i++) {
+            suma = suma + f_x[i];
         }
 
-        System.out.println("Area : " + ((h / 2) * (intervalos[0] + intervalos[intervalos.length - 1] + (2 * suma))));
+        System.out.println("Area : " + ((h / 2) * (f_x[0] + f_x[f_x.length - 1] + (2 * suma))));
     }
 
 }

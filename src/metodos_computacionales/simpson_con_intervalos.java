@@ -14,7 +14,7 @@ public class simpson_con_intervalos {
     public static void main(String[] args) {
         ///////////////////MODIFICAR ESTO///////////////////
         double[] x = {0, 1, 2, 3, 4};
-        double[] intervalos = {1, 4.75, 3, 0, 0};
+        double[] f_x = {1, 4.75, 3, 0, 0};
         ///////////////////MODIFICAR ESTO///////////////////
         
         double a = x[0];
@@ -24,17 +24,17 @@ public class simpson_con_intervalos {
         double sumaPar = 0;
 
         System.out.println("h: " + h);
-        for (int i = 1; i < intervalos.length; i = i + 2) {
-            sumaImpar = sumaImpar + intervalos[i];
+        for (int i = 1; i < f_x.length; i = i + 2) {
+            sumaImpar = sumaImpar + f_x[i];
         }
 
-        for (int i = 2; i < intervalos.length; i = i + 2) {
-            sumaPar = sumaPar + intervalos[i];
+        for (int i = 2; i < f_x.length; i = i + 2) {
+            sumaPar = sumaPar + f_x[i];
         }
 
         System.out.println("SumaPar: " + sumaPar);
         System.out.println("SumaImpar: " + sumaImpar);
-        System.out.println("Area : " + ((h / 3) * (intervalos[0] + intervalos[intervalos.length - 1] + (4 * sumaImpar) + (2 * sumaPar))));
+        System.out.println("Area : " + ((h / 3) * (f_x[0] + f_x[f_x.length - 1] + (4 * sumaImpar) + (2 * sumaPar))));
     }
 
 }

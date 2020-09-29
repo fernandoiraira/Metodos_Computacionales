@@ -12,8 +12,11 @@ package metodos_computacionales;
 public class trapecio_con_intervalos {
 
     public static void main(String[] args) {
+        ///////////////////MODIFICAR ESTO///////////////////
         double[] x = {0, 1, 2, 3, 4};
         double[] intervalos = {1, 4.75, 3, 0, 0};
+        ///////////////////MODIFICAR ESTO///////////////////
+        
         double a = x[0];
         double b = x[x.length - 1];
         double h = (b - a) / (x.length - 1);
